@@ -3,7 +3,7 @@ env:
   es2021: true
 extends:
   - 'plugin:react/recommended'
-  - standard
+  - 'prettier-standard'
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -11,4 +11,4 @@ parserOptions:
   sourceType: module
 plugins:
   - react
-rules: {}
+  - prettier
