@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types'
 
-const Button = ({ children }) => <button>{children}</button>
+import styles from './button.module.css'
+
+const Button = ({ children }) => (
+  <button className={styles.button}>{children}</button>
+)
 
 Button.propTypes = {
   children: PropTypes.node.isRequired
