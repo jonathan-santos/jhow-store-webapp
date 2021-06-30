@@ -1,12 +1,11 @@
 const path = require('path')
 
 module.exports = {
-  stories: ['../components/**/*.stories.mdx'],
+  stories: ['../components/**/*.stories.jsx'],
   addons: [
     '@storybook/addon-docs',
     '@storybook/addon-controls',
-    '@storybook/addon-viewport',
-    '@storybook/preset-scss'
+    '@storybook/addon-viewport'
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
