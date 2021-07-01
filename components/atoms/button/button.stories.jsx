@@ -5,9 +5,9 @@ export default {
   title: 'atoms/Button'
 }
 
-const Story = (args) => <Button {...args} />
+const Template = (args) => <Button {...args} />
 
-export const Primary = Story.bind({})
+export const Primary = Template.bind({})
 Primary.args = {
   className: 'primary',
   children: 'text'
