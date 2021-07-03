@@ -15,3 +15,4 @@ plugins:
 rules:
   react/react-in-jsx-scope: 0
   no-undef: 0
+  import/export: 0
