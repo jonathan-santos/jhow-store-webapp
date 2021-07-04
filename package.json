@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "next dev",
-    "storybook": "start-storybook -p 9009",
+    "storybook": "start-storybook -p 9009 --ci",
     "storybook:build": "build-storybook",
     "test": "jest --coverage",
     "test:w": "jest --watchAll"
@@ -18,11 +18,13 @@
     "@storybook/addon-a11y": "^6.3.2",
     "@storybook/addon-controls": "^6.3.1",
     "@storybook/addon-docs": "^6.3.1",
+    "@storybook/addon-essentials": "^6.3.2",
     "@storybook/addon-viewport": "^6.3.1",
     "@storybook/react": "^6.3.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "babel-jest": "^27.0.6",
+    "classnames": "^2.3.1",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-prettier-standard": "^4.0.1",

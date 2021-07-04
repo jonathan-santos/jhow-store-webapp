@@ -1,3 +1,122 @@
 .button {
-  background: red;
+  border: 0.3rem solid transparent;
+  border-radius: 1.2rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--color-text-light);
+  font-size: 2rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  outline: none;
+
+  &:disabled {
+    background: var(--color-disabled);
+    border-color: var(--color-disabled);
+    cursor: initial;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: var(--color-disabled);
+    }
+  }
+}
+
+.primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  outline-color: var(--color-primary);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--color-primary-dark);
+  }
+}
+
+.positive {
+  background: var(--color-positive);
+  border-color: var(--color-positive);
+  outline-color: var(--color-positive);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--color-positive-dark);
+  }
+}
+
+.negative {
+  background: var(--color-negative);
+  border-color: var(--color-negative);
+  outline-color: var(--color-negative);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--color-negative-dark);
+  }
+}
+
+.in-dark {
+  background: var(--color-text-light);
+  border-color: var(--color-text-light);
+  outline-color: var(--color-text-light);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--color-disabled);
+  }
+}
+
+.secondary {
+  background: transparent;
+
+  &:disabled {
+    color: var(--color-disabled);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  &.primary {
+    color: var(--color-primary);
+  }
+
+  &.positive {
+    color: var(--color-positive);
+  }
+
+  &.negative {
+    color: var(--color-negative);
+  }
+
+  &.in-dark {
+    color: var(--color-text-light);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }

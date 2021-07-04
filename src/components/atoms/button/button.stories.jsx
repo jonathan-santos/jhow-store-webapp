@@ -9,6 +9,61 @@ const Template = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {
-  className: 'primary',
-  children: 'text'
+  children: 'Text'
+}
+
+export const Positive = Template.bind({})
+Positive.args = {
+  children: 'Text',
+  color: 'positive'
+}
+
+export const Negative = Template.bind({})
+Negative.args = {
+  children: 'Text',
+  color: 'negative'
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  children: 'Text',
+  disabled: true
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  children: 'Text',
+  secondary: true
+}
+
+export const SecondaryPositive = Template.bind({})
+SecondaryPositive.args = {
+  children: 'Text',
+  secondary: true,
+  color: 'positive'
+}
+
+export const SecondaryNegative = Template.bind({})
+SecondaryNegative.args = {
+  children: 'Text',
+  secondary: true,
+  color: 'negative'
+}
+
+export const SecondaryInDark = Template.bind({})
+SecondaryInDark.args = {
+  children: 'Text',
+  secondary: true,
+  color: 'in-dark'
+}
+SecondaryInDark.parameters = {
+  backgrounds: {
+    default: 'dark'
+  }
+}
+
+export const Bottom = Template.bind({})
+Bottom.args = {
+  children: 'Text',
+  bottom: true
 }

@@ -1,0 +1,26 @@
+:root {
+  font-size: 60%;
+
+  --color-primary: #0074d9;
+  --color-primary-dark: #003766;
+  --color-positive: #3d9970;
+  --color-positive-dark: #1d4935;
+  --color-negative: #ed1c40;
+  --color-negative-dark: #8e0b22;
+  --color-in-dark: #ffffff;
+  --color-disabled: #b6b6b6;
+
+  --color-text-dark: #333333;
+  --color-text-light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto Slab;
+}
