@@ -1,0 +1,10 @@
+.section {
+  border-radius: 1.5rem;
+  padding: 1rem;
+
+  background: var(--color-section);
+
+  & + & {
+    margin-top: 1.6rem;
+  }
+}
