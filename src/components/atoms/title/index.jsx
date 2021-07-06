@@ -10,7 +10,11 @@ export const Title = (props) => {
   const TitleElement = `h${level}`
   const classNames = classnames(styles.title, styles[`h${level}`])
 
-  return <TitleElement className={classNames}>{children}</TitleElement>
+  return (
+    <TitleElement {...props} className={classNames}>
+      {children}
+    </TitleElement>
+  )
 }
 
 Title.defaultProps = {
